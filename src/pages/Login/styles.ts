@@ -22,3 +22,41 @@ export const LoginContainer = styled.div`
   align-items: flex-start;
   justify-content: center;
 `;
+
+export const Title = styled.h1`
+  font-size: 42px;
+  font-weight: 700;
+  color: #1c2027;
+`;
+export const SubTitle = styled.p`
+  font-size: 16px;
+  font-weight: 600;
+  color: #9aa3ae;
+`;
+
+export const MainText = styled.p`
+  font-size: 16px;
+  font-weight: 400;
+  color: #bac2d0;
+`;
+export const Row = styled.div`
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+`;
+
+export const Column = styled.div`
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+`;
+export const SpacingMd = styled.div`
+  margin: 10px 0;
+`;
+
+export const SpacingSm = styled.div`
+  margin: 5px 0;
+`;

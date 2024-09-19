@@ -1,5 +1,30 @@
-function App() {
-  return <h1>Hello</h1>;
-}
+import {
+  Container,
+  LoginContainer,
+  Column,
+  SpacingMd,
+  SpacingSm,
+  Title,
+  SubTitle,
+  MainText,
+} from "./styles";
 
-export default App;
+import { loginContent } from "../../data/data";
+
+const Login = () => {
+  return (
+    <Container>
+      <LoginContainer>
+        <Column>
+          <Title>Login</Title>
+          <SpacingMd />
+          <SubTitle>{loginContent.subtitle}</SubTitle>
+          <SpacingSm />
+          <MainText>{loginContent.maintext}</MainText>
+        </Column>
+      </LoginContainer>
+    </Container>
+  );
+};
+
+export default Login;
