@@ -14,6 +14,7 @@ import {
   Title,
   SubTitle,
   MainText,
+  InputLabel,
 } from "./styles";
 import { defaultValues, IFormLogin } from "./types";
 
@@ -22,7 +23,7 @@ import Button from "../../components/Button";
 
 const schema = yup
   .object({
-    email: yup.string().email("E-mail inválido").required("Campo obrigatório"),
+    email: yup.string().email("Invalid E-mail").required("Campo obrigatório"),
     password: yup
       .string()
       .min(6, "No minimo 6 caracteres")
@@ -32,6 +33,7 @@ const schema = yup
 
 const Login = () => {
   const {
+    register,
     control,
     formState: { error, isValid },
   } = useForm<IFormLogin>({
@@ -51,6 +53,7 @@ const Login = () => {
           <SpacingSm />
           <MainText>{loginContent.maintext}</MainText>
           <SpacingMd />
+          <InputLabel>Enter your Email </InputLabel>
           <Input
             name="email"
             placeholder="Email"
@@ -58,6 +61,7 @@ const Login = () => {
             errorMessage={error?.email?.message}
           />
           <SpacingMd />
+          <InputLabel>Enter your Password </InputLabel>
           <Input
             name="password"
             type="password"

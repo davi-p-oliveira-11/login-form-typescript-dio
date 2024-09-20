@@ -60,3 +60,9 @@ export const SpacingMd = styled.div`
 export const SpacingSm = styled.div`
   margin: 5px 0;
 `;
+
+export const InputLabel = styled.p`
+  font-size: 14px;
+  font-weight: 600;
+  color: #1c2027;
+`;
